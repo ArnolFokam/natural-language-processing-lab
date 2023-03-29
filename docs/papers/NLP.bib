@@ -1,0 +1,160 @@
+@misc{abdulmuminSeparatingGrainsChaff2022,
+  title = {Separating {{Grains}} from the {{Chaff}}: {{Using Data Filtering}} to {{Improve Multilingual Translation}} for {{Low-Resourced African Languages}}},
+  shorttitle = {Separating {{Grains}} from the {{Chaff}}},
+  author = {Abdulmumin, Idris and Beukman, Michael and Alabi, Jesujoba O. and Emezue, Chris and Asiko, Everlyn and Adewumi, Tosin and Muhammad, Shamsuddeen Hassan and Adeyemi, Mofetoluwa and Yousuf, Oreen and Singh, Sahib and Gwadabe, Tajuddeen Rabiu},
+  year = {2022},
+  month = oct,
+  number = {arXiv:2210.10692},
+  eprint = {arXiv:2210.10692},
+  publisher = {{arXiv}},
+  urldate = {2022-11-29},
+  abstract = {We participated in the WMT 2022 Large-Scale Machine Translation Evaluation for the African Languages Shared Task. This work describes our approach, which is based on filtering the given noisy data using a sentence-pair classifier that was built by fine-tuning a pre-trained language model. To train the classifier, we obtain positive samples (i.e. high-quality parallel sentences) from a gold-standard curated dataset and extract negative samples (i.e. low-quality parallel sentences) from automatically aligned parallel data by choosing sentences with low alignment scores. Our final machine translation model was then trained on filtered data, instead of the entire noisy dataset. We empirically validate our approach by evaluating on two common datasets and show that data filtering generally improves overall translation quality, in some cases even significantly.},
+  archiveprefix = {arxiv},
+  keywords = {Computer Science - Computation and Language,Low-Resourced NLP,Machine Translation,Read (done)},
+  note = {\section{Annotations\\
+(11/29/2022, 12:12:31 PM)}
+
+\par
+``Our final machine translation model was then trained on filtered data, instead of the entire noisy dataset.'' (Abdulmumin et al., 2022, p. 1) shows that quality of data is important.
+\par
+``Similarly, research has shown that data quality plays an important role in the performance of natural language processing (NLP) models, in machine translation specifically (Arora et al., 2021; Dutta et al., 2020; Hasan et al., 2020; Tchistiakova et al., 2021), but also more generally in other NLP tasks (Abdul-Rauf et al., 2012; Alabi et al., 2020). It was found that often times, models that were trained on smaller amounts of high-quality data outperform their counterparts that are trained on larger amounts of noisy datasets (Gasc\'o et al., 2012; Przystupa and Abdul-Mageed, 2019; Abdulmumin et al., 2022; de Gibert et al., 2022)'' (Abdulmumin et al., 2022, p. 1) background or introduction ideas
+\par
+``This has led to many studies (Eetemadi et al., 2015) and prior WMT tasks (Koehn et al., 2018, 2019, 2020) that attempt to find ways to improve the quality of existing data, which, as mentioned before, is often rife with errors.'' (Abdulmumin et al., 2022, p. 2) background or introduction ideas
+\par
+``The sentences in this category make up the majority of the training dataset, making up 99.2\% of the total training data.'' (Abdulmumin et al., 2022, p. 3) this induces a bias in the corpus that bias the filtering model towards assigning the label 'noisy'
+\par
+Comment: Accepted at the Seventh Conference on Machine Translation (WMT22)},
+  file = {/home/arnol/Zotero/storage/P2XTKU6D/Abdulmumin et al. - 2022 - Separating Grains from the Chaff Using Data Filte.pdf;/home/arnol/Zotero/storage/JFQ6F6NK/2210.html}
+}
+
+@inproceedings{adelaniFewThousandTranslations2022,
+  title = {A {{Few Thousand Translations Go}} a {{Long Way}}! {{Leveraging Pre-trained Models}} for {{African News Translation}}},
+  booktitle = {Proceedings of the 2022 {{Conference}} of the {{North American Chapter}} of the {{Association}} for {{Computational Linguistics}}: {{Human Language Technologies}}},
+  author = {Adelani, David and Alabi, Jesujoba and Fan, Angela and Kreutzer, Julia and Shen, Xiaoyu and Reid, Machel and Ruiter, Dana and Klakow, Dietrich and Nabende, Peter and Chang, Ernie and Gwadabe, Tajuddeen and Sackey, Freshia and Dossou, Bonaventure F. P. and Emezue, Chris and Leong, Colin and Beukman, Michael and Muhammad, Shamsuddeen and Jarso, Guyo and Yousuf, Oreen and Niyongabo Rubungo, Andre and Hacheme, Gilles and Wairagala, Eric Peter and Nasir, Muhammad Umair and Ajibade, Benjamin and Ajayi, Tunde and Gitau, Yvonne and Abbott, Jade and Ahmed, Mohamed and Ochieng, Millicent and Aremu, Anuoluwapo and Ogayo, Perez and Mukiibi, Jonathan and Ouoba Kabore, Fatoumata and Kalipe, Godson and Mbaye, Derguene and Tapo, Allahsera Auguste and Memdjokam Koagne, Victoire and {Munkoh-Buabeng}, Edwin and Wagner, Valencia and Abdulmumin, Idris and Awokoya, Ayodele and Buzaaba, Happy and Sibanda, Blessing and Bukula, Andiswa and Manthalu, Sam},
+  year = {2022},
+  pages = {3053--3070},
+  publisher = {{Association for Computational Linguistics}},
+  address = {{Seattle, United States}},
+  doi = {10.18653/v1/2022.naacl-main.223},
+  urldate = {2022-11-29},
+  langid = {english},
+  keywords = {Low-Resourced NLP,Machine Translation,Read (waiting)},
+  file = {/home/arnol/Zotero/storage/TF9A63JK/Adelani et al. - 2022 - A Few Thousand Translations Go a Long Way! Leverag.pdf}
+}
+
+@misc{alabiAdaptingPretrainedLanguage2022,
+  title = {Adapting {{Pre-trained Language Models}} to {{African Languages}} via {{Multilingual Adaptive Fine-Tuning}}},
+  author = {Alabi, Jesujoba O. and Adelani, David Ifeoluwa and Mosbach, Marius and Klakow, Dietrich},
+  year = {2022},
+  month = oct,
+  number = {arXiv:2204.06487},
+  eprint = {arXiv:2204.06487},
+  publisher = {{arXiv}},
+  urldate = {2022-11-29},
+  abstract = {Multilingual pre-trained language models (PLMs) have demonstrated impressive performance on several downstream tasks for both high-resourced and low-resourced languages. However, there is still a large performance drop for languages unseen during pre-training, especially African languages. One of the most effective approaches to adapt to a new language is \textbackslash textit\{language adaptive fine-tuning\} (LAFT) -- fine-tuning a multilingual PLM on monolingual texts of a language using the pre-training objective. However, adapting to a target language individually takes a large disk space and limits the cross-lingual transfer abilities of the resulting models because they have been specialized for a single language. In this paper, we perform \textbackslash textit\{multilingual adaptive fine-tuning\} on 17 most-resourced African languages and three other high-resource languages widely spoken on the African continent to encourage cross-lingual transfer learning. To further specialize the multilingual PLM, we removed vocabulary tokens from the embedding layer that corresponds to non-African writing scripts before MAFT, thus reducing the model size by around 50\%. Our evaluation on two multilingual PLMs (AfriBERTa and XLM-R) and three NLP tasks (NER, news topic classification, and sentiment classification) shows that our approach is competitive to applying LAFT on individual languages while requiring significantly less disk space. Additionally, we show that our adapted PLM also improves the zero-shot cross-lingual transfer abilities of parameter efficient fine-tuning methods.},
+  archiveprefix = {arxiv},
+  keywords = {Computer Science - Computation and Language,Low-Resourced NLP,Read (waiting)},
+  note = {Comment: Accepted to COLING 2022},
+  file = {/home/arnol/Zotero/storage/NEYKXW78/Alabi et al. - 2022 - Adapting Pre-trained Language Models to African La.pdf;/home/arnol/Zotero/storage/JIPSMCTN/2204.html}
+}
+
+@misc{alabiMassiveVsCurated2020,
+  title = {Massive vs. {{Curated Word Embeddings}} for {{Low-Resourced Languages}}. {{The Case}} of {{Yor}}\textbackslash `ub\textbackslash 'a and {{Twi}}},
+  author = {Alabi, Jesujoba O. and {Amponsah-Kaakyire}, Kwabena and Adelani, David I. and {Espa{\~n}a-Bonet}, Cristina},
+  year = {2020},
+  month = mar,
+  number = {arXiv:1912.02481},
+  eprint = {arXiv:1912.02481},
+  publisher = {{arXiv}},
+  urldate = {2022-11-29},
+  abstract = {The success of several architectures to learn semantic representations from unannotated text and the availability of these kind of texts in online multilingual resources such as Wikipedia has facilitated the massive and automatic creation of resources for multiple languages. The evaluation of such resources is usually done for the high-resourced languages, where one has a smorgasbord of tasks and test sets to evaluate on. For low-resourced languages, the evaluation is more difficult and normally ignored, with the hope that the impressive capability of deep learning architectures to learn (multilingual) representations in the high-resourced setting holds in the low-resourced setting too. In this paper we focus on two African languages, Yor\textbackslash `ub\textbackslash 'a and Twi, and compare the word embeddings obtained in this way, with word embeddings obtained from curated corpora and a language-dependent processing. We analyse the noise in the publicly available corpora, collect high quality and noisy data for the two languages and quantify the improvements that depend not only on the amount of data but on the quality too. We also use different architectures that learn word representations both from surface forms and characters to further exploit all the available information which showed to be important for these languages. For the evaluation, we manually translate the wordsim-353 word pairs dataset from English into Yor\textbackslash `ub\textbackslash 'a and Twi. As output of the work, we provide corpora, embeddings and the test suits for both languages.},
+  archiveprefix = {arxiv},
+  keywords = {Computer Science - Computation and Language,Low-Resourced NLP,Read (waiting),Word Embeddings},
+  note = {Comment: 9 pages, 4 tables. Accepted at LREC 2020},
+  file = {/home/arnol/Zotero/storage/LEWP42XT/Alabi et al. - 2020 - Massive vs. Curated Word Embeddings for Low-Resour.pdf;/home/arnol/Zotero/storage/TMXCE92U/1912.html}
+}
+
+@inproceedings{jieBetterModelingIncomplete2019a,
+  title = {Better {{Modeling}} of {{Incomplete Annotations}} for {{Named Entity Recognition}}},
+  booktitle = {Proceedings of the 2019 {{Conference}} of the {{North}}},
+  author = {Jie, Zhanming and Xie, Pengjun and Lu, Wei and Ding, Ruixue and Li, Linlin},
+  year = {2019},
+  pages = {729--734},
+  publisher = {{Association for Computational Linguistics}},
+  address = {{Minneapolis, Minnesota}},
+  doi = {10.18653/v1/N19-1079},
+  urldate = {2022-11-20},
+  langid = {english},
+  keywords = {Named Entity Recognition,Read (waiting)},
+  file = {/home/arnol/Zotero/storage/RAM2P8BL/Jie et al. - 2019 - Better Modeling of Incomplete Annotations for Name.pdf}
+}
+
+@inproceedings{joshiWordEmbeddingsLow2019,
+  title = {Word {{Embeddings}} in {{Low Resource Gujarati Language}}},
+  booktitle = {2019 {{International Conference}} on {{Document Analysis}} and {{Recognition Workshops}} ({{ICDARW}})},
+  author = {Joshi, Ishani and Koringa, Purvi and Mitra, Suman},
+  year = {2019},
+  month = sep,
+  pages = {110--115},
+  publisher = {{IEEE}},
+  address = {{Sydney, Australia}},
+  doi = {10.1109/ICDARW.2019.40090},
+  urldate = {2022-12-05},
+  isbn = {978-1-72815-054-3}
+}
+
+@inproceedings{malkinBalancedDataApproach2022,
+  title = {A {{Balanced Data Approach}} for {{Evaluating Cross-Lingual Transfer}}: {{Mapping}} the {{Linguistic Blood Bank}}},
+  shorttitle = {A {{Balanced Data Approach}} for {{Evaluating Cross-Lingual Transfer}}},
+  booktitle = {Proceedings of the 2022 {{Conference}} of the {{North American Chapter}} of the {{Association}} for {{Computational Linguistics}}: {{Human Language Technologies}}},
+  author = {Malkin, Dan and Limisiewicz, Tomasz and Stanovsky, Gabriel},
+  year = {2022},
+  pages = {4903--4915},
+  publisher = {{Association for Computational Linguistics}},
+  address = {{Seattle, United States}},
+  doi = {10.18653/v1/2022.naacl-main.361},
+  urldate = {2022-11-20},
+  langid = {english},
+  keywords = {Read (waiting),Transfer Learning},
+  file = {/home/arnol/Zotero/storage/UCMCCZM8/Malkin et al. - 2022 - A Balanced Data Approach for Evaluating Cross-Ling.pdf}
+}
+
+@inproceedings{nieInadequacyOptimizingAlignment2023,
+  title = {On {{The Inadequacy}} of {{Optimizing Alignment}} and {{Uniformity}} in {{Contrastive Learning}} of {{Sentence Representations}}},
+  booktitle = {The {{Eleventh International Conference}} on {{Learning Representations}}},
+  author = {Nie, Zhijie and Zhang, Richong and Mao, Yongyi},
+  year = {2023},
+  abstract = {Contrastive learning is widely used in areas such as visual representation learning (VRL) and sentence representation learning (SRL). Considering the differences between VRL and SRL in terms of negative sample size and evaluation focus, we believe that the solid findings obtained in VRL may not be entirely carried over to SRL. In this work, we consider the suitability of the decoupled form of contrastive loss, i.e., alignment and uniformity, in SRL. We find a performance gap between sentence representations obtained by jointly optimizing alignment and uniformity on the STS task and those obtained using contrastive loss. Further, we find that the joint optimization of alignment and uniformity during training is prone to overfitting, which does not occur on the contrastive loss. Analyzing them based on the variation of the gradient norms, we find that there is a property of ``gradient dissipation'' in contrastive loss and believe that it is the key to preventing overfitting. We simulate similar "gradient dissipation" of contrastive loss on four optimization objectives of two forms, and achieve the same or even better performance than contrastive loss on the STS tasks, confirming our hypothesis.}
+}
+
+@misc{oyewusiNaijaNERComprehensiveNamed2021,
+  title = {{{NaijaNER}} : {{Comprehensive Named Entity Recognition}} for 5 {{Nigerian Languages}}},
+  shorttitle = {{{NaijaNER}}},
+  author = {Oyewusi, Wuraola Fisayo and Adekanmbi, Olubayo and Okoh, Ifeoma and Onuigwe, Vitus and Salami, Mary Idera and Osakuade, Opeyemi and Ibejih, Sharon and Musa, Usman Abdullahi},
+  year = {2021},
+  month = mar,
+  number = {arXiv:2105.00810},
+  eprint = {arXiv:2105.00810},
+  publisher = {{arXiv}},
+  urldate = {2022-12-07},
+  abstract = {Most of the common applications of Named Entity Recognition (NER) is on English and other highly available languages. In this work, we present our findings on Named Entity Recognition for 5 Nigerian Languages (Nigerian English, Nigerian Pidgin English, Igbo, Yoruba and Hausa). These languages are considered low-resourced, and very little openly available Natural Language Processing work has been done in most of them. In this work, individual NER models were trained and metrics recorded for each of the languages. We also worked on a combined model that can handle Named Entity Recognition (NER) for any of the five languages. The combined model works well for Named Entity Recognition(NER) on each of the languages and with better performance compared to individual NER models trained specifically on annotated data for the specific language. The aim of this work is to share our learning on how information extraction using Named Entity Recognition can be optimized for the listed Nigerian Languages for inclusion, ease of deployment in production and reusability of models. Models developed during this project are available on GitHub https://git.io/JY0kk and an interactive web app https://nigner.herokuapp.com/.},
+  archiveprefix = {arxiv},
+  keywords = {Computer Science - Computation and Language},
+  note = {Comment: Accepted at the AfricaNLP Workshop, EACL 2021},
+  file = {/home/arnol/Zotero/storage/BP7Q5VFP/Oyewusi et al. - 2021 - NaijaNER  Comprehensive Named Entity Recognition .pdf;/home/arnol/Zotero/storage/8UF9AITC/2105.html}
+}
+
+@inproceedings{zhouCloserLookHow2022,
+  title = {A {{Closer Look}} at {{How Fine-tuning Changes BERT}}},
+  booktitle = {Proceedings of the 60th {{Annual Meeting}} of the {{Association}} for {{Computational Linguistics}} ({{Volume}} 1: {{Long Papers}})},
+  author = {Zhou, Yichu and Srikumar, Vivek},
+  year = {2022},
+  pages = {1046--1061},
+  publisher = {{Association for Computational Linguistics}},
+  address = {{Dublin, Ireland}},
+  doi = {10.18653/v1/2022.acl-long.75},
+  urldate = {2022-11-20},
+  langid = {english},
+  keywords = {Read (waiting),Transfer Learning},
+  file = {/home/arnol/Zotero/storage/FJDEBT6W/Zhou and Srikumar - 2022 - A Closer Look at How Fine-tuning Changes BERT.pdf}
+}
